@@ -1,6 +1,6 @@
 <template>
 	
-
+<div>
 <table class="table table-bordered" data-pic-datatable='{"checkboxes":true}'>
 	<thead>
 		<tr>
@@ -139,4 +139,5 @@
 		</tr>
 	</tbody>
 </table>
+</div>
 </template>
