@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Coloque uma descrição da página exibida">
+		<meta name="author" content="Diretoria de Inovação e Tecnologia da Informação">
+		<script charset="utf-8" src="./pic/js/modernizr.js"></script>
+		<style>.js body {display: none}</style>
+		<title>MTDWeb - PAGE TITLE</title>
+	</head>
+	<body data-pic-ambiente="Prototipação">
+		<!-- wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+				<div id="banner">
+					<header>
+						<div class="sr-only"><a href="#page-content-wrapper">Ir para o conteúdo.</a> | <a href="#menubar">Ir para a navegação</a>
+						</div>
+						<div id="cabecalho" class="container-fluid">
+							<div class="topoAplicacao">
+								<a class="identAplicacao" href="index.html">
+									<span class="sigla">MTDWeb</span>
+
+									<span class="nome">Módulo de Tratamento de Discursos Web</span>
+								</a>
+
+			<!-- PONTO DE INSERÇÃO DAS FERRAMENTAS DE SUPORTE GLOBAL -->
+
+							</div>
+						</div>
+
+			<!-- PONTO DE INSERÇÃO DO MENU GLOBAL -->
+
+					</header>
+				</div>
+
+			<!-- PONTO DE INSERÇÃO DO MENU LOCAL -->
+
+			<!-- Área de Conteúdo -->
+			<div id="page-content-wrapper">
+				<div class="container-fluid">
+
+			<!-- PONTO DE INSERÇÃO DO CONTEÚDO PRINCIPAL -->
+					<div class="page-header">
+						<h1>Painel</h1>
+					</div>
+
+					< Próximas iterações >
+
+					(navegue pelo menu)
+				</div>
+			</div>
+
+			<!-- Informações de Rodapé -->
+			<div class="rodape" role="contentinfo" aria-labelledby="foot-info">
+				<div class="dir" id="foot-info">Produzido por <span>Ditec</span></div>
+				<div class="esq">
+					<span class="sigla">GESTOR</span>
+					<span class="divisor"> - </span>
+					<span class="nomeSetor">Nome do Gestor</span>
+					<span class="versao">v0.3.0</span>
+				</div>
+
+			</div>
+			<!-- /rodapé -->
+		</div>
+		<!-- /wrapper -->
+
+		<!-- A partir da versão 1.7.1, o PIC deixou de depender da biblioteca YUI.
+			 Somente se você estiver usando uma versão anterior, inclua a chamada a essa biblioteca, 
+			 como indicado na linha comentada logo abaixo. -->		
+		 <script src="./pic/js/yui-min.js"></script> 
+		<script src="./pic/js/load-control.js"></script>
+	</body>
 </html>
