@@ -27,9 +27,13 @@ export default {
     Footer
   },
   data() {
-    return {
-    }
+    return {}
+  },
+  updated() {
+    PIC.activateAllWidgets();
+  },
+  created() {
+    console.log(process.env.VUE_APP_AMBIENTE);
   }
- 
 }
 </script>
