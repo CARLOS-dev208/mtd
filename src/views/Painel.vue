@@ -12,10 +12,19 @@
 
 
 
-<style>
-.page-header{
-    width: 100%;
-    color: blue;
+<script>
 
+
+export default {
+  name: "painel",
+  data() {
+    return {}
+  },
+  updated() {
+    PIC.activateAllWidgets();
+  },
+  created() {
+    console.log(process.env.VUE_APP_AMBIENTE);
+  }
 }
-</style>>
+</script>

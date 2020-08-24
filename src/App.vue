@@ -34,6 +34,8 @@ export default {
   },
   created() {
     console.log(process.env.VUE_APP_AMBIENTE);
-  }
+  },
+
+  
 }
 </script>

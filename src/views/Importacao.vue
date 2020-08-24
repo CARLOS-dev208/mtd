@@ -1,7 +1,7 @@
-<template>
+<template >
 	
-<div>
-<table class="table table-bordered" data-pic-datatable='{"checkboxes":true}'>
+<div class="tbl">
+<table class="table table-bordered tbl-tabela" data-pic-datatable='{"checkboxes":true}'>
 	<thead>
 		<tr>
 			<th></th>
@@ -141,3 +141,14 @@
 </table>
 </div>
 </template>
+
+
+<style scoped>
+.tbl{
+	margin-top: 2rem;
+	
+}
+.tbl-tabela{
+ margin: 0 5px 5px 5px 5px;
+}
+</style>
