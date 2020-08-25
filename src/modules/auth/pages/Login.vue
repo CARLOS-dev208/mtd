@@ -37,6 +37,7 @@ import {mapActions} from 'vuex'
            async submit(){
                 try{
                await this.ActionDoLogin(this.form)
+             
                this.$router.push({name: 'painel'})
                 location.reload();
                 }catch(err){

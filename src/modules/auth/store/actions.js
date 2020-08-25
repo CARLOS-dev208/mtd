@@ -50,7 +50,8 @@ export const ActionSetToken = ({commit}, payload) =>{
 
 export const ActionSignOut = ({ dispatch }) => {
   storage.setHeaderToken('')
-  storage.deleteLocalToken()
+  storage.deleteLocalToken('')
+  storage.setLocalToken('')
   dispatch('ActionSetUser', {})
   dispatch('ActionSetToken', '')
 }

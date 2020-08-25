@@ -4,16 +4,16 @@
 	<nav class="navbar navbar-default">
 		<ul data-pic-globalnav>
 			<li>
-				<router-link  to="/">Painel</router-link>
+				<router-link v-if="menuAutheticated" to="/">Painel</router-link>
 			</li>
 			<li>
-				<router-link  to="/Importacao">Importação</router-link>
+				<router-link v-if="menuAutheticated" to="/Importacao">Importação</router-link>
 			</li>
 			<li>
-				<router-link  to="/">Conferência</router-link>
+				<router-link v-if="menuAutheticated" to="/">Conferência</router-link>
 			</li>
 			<li>
-				<router-link  to="/">Atribuições</router-link>
+				<router-link v-if="menuAutheticated"  to="/">Atribuições</router-link>
 			</li>
 		</ul>
 	</nav>
@@ -24,7 +24,13 @@
 
 <script>
 export default {
-    name: 'Menu',
+	name: 'Menu',
+	
+	computed:{
+		menuAutheticated(){
+			return this.$route.name !== 'login'
+		}
+	}
 
 }
 </script>

@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 
 module.exports = {
-    // baseUrl: '/mtd/',
+     baseUrl: '/mtd/',
     configureWebpack: {
         devtool: 'source-map',
         plugins: [
